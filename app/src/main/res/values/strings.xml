@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">UniDex</string>
+
+    <!-- HomeActivity -->
+    <string name="welcome_title">Welcome to UniDex</string>
+    <string name="welcome_subtitle">Explore universities from every country in the world.</string>
+    <string name="btn_search_universities">Search universities around the world</string>
+    <string name="btn_exit">Exit</string>
+    <string name="label_dark_mode">Dark mode</string>
+
+    <!-- MainActivity -->
+    <string name="hint_country">Country (e.g. Argentina)</string>
+    <string name="btn_search">Search</string>
+    <string name="msg_empty_results">No universities found for that country.</string>
+    <string name="msg_empty_input">Type a country name</string>
+    <string name="btn_back_home">Back to Home</string>
+
+    <!-- UniversityDetailFragment -->
+    <string name="label_domains">Official domains:</string>
+    <string name="btn_visit_website">Visit official website</string>
+    <string name="btn_back_to_list">Back to list</string>
+    <string name="label_country_code">Country code: %1$s</string>
+    <string name="country_code_not_available">N/A</string>
+
+    <!-- Generic error messages (used by the ViewModel) -->
+    <string name="error_server">Server error (code %1$d)</string>
+    <string name="error_connection">Connection error: %1$s</string>
+</resources>

@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.UniDex" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Buttons: navy fill, white text -->
+        <item name="colorPrimary">@color/colorUniDexPrimary</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Screen background: white, general text: black -->
+        <item name="android:windowBackground">@color/white</item>
+        <item name="colorOnBackground">@color/black</item>
+
+        <!-- Cards / search bar box: always white with black text -->
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/black</item>
+    </style>
+
+    <style name="Theme.UniDex" parent="Base.Theme.UniDex" />
+</resources>

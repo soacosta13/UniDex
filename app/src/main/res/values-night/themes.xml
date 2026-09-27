@@ -1,0 +1,15 @@
+<resources>
+    <style name="Base.Theme.UniDex" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/colorUniDexPrimary</item>
+
+        <item name="android:windowBackground">@color/colorUniDexPrimary</item>
+        <item name="colorOnBackground">@color/white</item>
+
+        <!-- cards with lighter navy  -->
+        <item name="colorSurface">@color/uniDexNavyLight</item>
+        <item name="colorOnSurface">@color/white</item>
+    </style>
+
+    <style name="Theme.UniDex" parent="Base.Theme.UniDex" />
+</resources>
