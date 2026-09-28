@@ -44,30 +44,24 @@ class UniversityDetailFragment : Fragment() {
         val university = arguments?.getParcelable<University>(ARG_UNIVERSITY) ?: return
 
         bindUniversity(university)
-
-        binding.btnBack.setOnClickListener {
-            requireActivity().finish() //closes detailactivity and returns to main
-        }
     }
 
     private fun bindUniversity(university: University) {
         binding.tvName.text = university.name
+        binding.tvCountry.text = university.country
 
-        val location = listOfNotNull(university.stateProvince, university.country)
-            .joinToString(", ")
-        binding.tvLocation.text = location
+        binding.tvCountryCode.text =
+            university.countryCode ?: getString(R.string.value_not_available)
 
-        binding.tvCountryCode.text = getString(
-            R.string.label_country_code,
-            university.countryCode ?: getString(R.string.country_code_not_available)
-        )
+        binding.tvStateProvince.text =
+            university.stateProvince ?: getString(R.string.value_not_available)
 
-        binding.tvDomains.text = university.domains.joinToString (", ")
+        binding.tvDomains.text = university.domains.joinToString(", ")
 
         val websiteUrl = university.webPages.firstOrNull()
         binding.btnVisitWebsite.isEnabled = websiteUrl != null
         binding.btnVisitWebsite.setOnClickListener {
-            websiteUrl.let {
+            websiteUrl?.let {
                 startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(it)))
             }
         }

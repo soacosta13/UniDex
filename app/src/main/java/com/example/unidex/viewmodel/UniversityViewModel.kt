@@ -37,4 +37,8 @@ class UniversityViewModel : ViewModel() {
             }
         }
     }
+
+    fun resetToIdle() {
+        _uiState.value = UniversityUiState.Idle
+    }
 }

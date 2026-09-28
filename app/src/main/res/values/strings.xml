@@ -10,18 +10,17 @@
     <string name="label_dark_mode">Dark mode</string>
 
     <!-- MainActivity -->
-    <string name="hint_country">Country (e.g. Argentina)</string>
-    <string name="btn_search">Search</string>
+    <string name="hint_country">Search by country…</string>
+    <string name="btn_clear_search">Clear search</string>
+    <string name="label_results_count">%1$d universities found</string>
     <string name="msg_empty_results">No universities found for that country.</string>
-    <string name="msg_empty_input">Type a country name</string>
-    <string name="btn_back_home">Back to Home</string>
 
     <!-- UniversityDetailFragment -->
-    <string name="label_domains">Official domains:</string>
+    <string name="label_state_province">State / Province</string>
+    <string name="label_country_code_short">Country Code</string>
+    <string name="label_domains">Official Domains</string>
+    <string name="value_not_available">N/A</string>
     <string name="btn_visit_website">Visit official website</string>
-    <string name="btn_back_to_list">Back to list</string>
-    <string name="label_country_code">Country code: %1$s</string>
-    <string name="country_code_not_available">N/A</string>
 
     <!-- Generic error messages (used by the ViewModel) -->
     <string name="error_server">Server error (code %1$d)</string>

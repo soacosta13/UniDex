@@ -5,4 +5,5 @@
     <color name="ic_launcher_background">#EEF2F8</color>
     <color name="colorUniDexPrimary">#16264F</color> <!-- navy color -->
     <color name="uniDexNavyLight">#24375E</color>
+    <color name="iconCircleBg">#1A16264F</color>
 </resources>
